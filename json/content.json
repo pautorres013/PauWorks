@@ -1,0 +1,331 @@
+{
+  "pf-content": [
+    {
+      "title":"My Projects",
+      "summary":"",
+      "description":"My work spans rigging, character modelling, hard-surface modelling, VFX/CGI, asset creation, logo animation, and illustration. I develop optimized rigs for both characters and mechanical assets, ensuring expressive and functional animation. My character modelling focuses on cel-shaded and stylized designs, though I also work with realistic texturing and 3D printing, including my original series Dwei Bar. For hard-surface modelling, I specialize in mechanical and structural forms using Blender and Marvelous Designer for cloth-based elements like furniture. While VFX and CGI are not my main focus, I can produce cinematic visuals for personal and professional projects. In asset creation, I craft game-ready models with low polycounts and baked textures to maximize performance. My side projects include logo animation in Blender, bringing brands to life with 3D depth, and illustration in Clip Studio Paint and Photoshop, often extended into animated GIFs."
+    },
+    {
+      "title": "Rigging",
+      "summary": "Showcases a range of rigging work, from organic character rigs to mechanical setups, emphasizing flexibility, functionality, and animation-ready performance.",
+      "description": "This section highlights my rigging capabilities across different types of models. For the character, I built a complete biped rig featuring IK/FK systems, a spline-based spine, and intuitive controls for smooth deformation and natural movement. For the bicycle, I created a mechanical rig that accurately simulates functional parts such as wheels, pedals, and steering, ensuring precise motion and animator-friendly usability. Together, these works demonstrate my adaptability in rigging both organic and hard-surface assets for various animation needs.",
+      "workflow": "My workflow begins with identifying the product and adjusting textures and rigging to suit its specific needs. For these projects, I often rely on shapekeys, as they provide a non-destructive and efficient way to make adjustments. Final renders are created based on client specifications, typically delivered in 4K PNG format for both images and animations.",
+      "renders": [
+        {
+          "Character Rig": [
+            {
+              "front": "./asset/content/rig/rig-front.mp4",
+              "front-viewport": "./asset/content/rig/rig-front-vp.mp4",
+              "angle": "./asset/content/rig/rig-angle.mp4",
+              "angle-viewport": "./asset/content/rig/rig-angle-vp.mp4"
+            }
+          ],
+          "Bicycle Rig": [
+            {
+              "showcase": "./asset/content/rig/showcase.mp4",
+              "viewport": "./asset/content/rig/rig-bike.mp4"
+            }
+          ]
+        }
+      ],
+      "thumbnail": "./asset/content/prod-vis/thumbnails/bottle_thumbnail.webp"
+    },
+    {
+      "title": "Character Modelling",
+      "summary": "I create stylized and cel-shaded characters, with my signature series Dwei Bar showcasing my craft and vision",
+      "description": "Since 2018, I have focused on cel-shaded and stylized character modeling, blending anime-inspired aesthetics with expressive design. While my primary strength lies in stylization, I also have the versatility to create realistic textures when required. My flagship project, “Dwei Bar,” is an original series that highlights my ability to not only model characters but also develop a cohesive artistic world around them. This series serves as a signature representation of my creative identity, demonstrating how I bring characters from concept to fully realized 3D assets. Additionally, my work extends into 3D printing, giving these characters a tangible presence. With this combination of artistic originality and technical execution, I deliver characters that are both visually striking and production-ready.",
+      "workflow": "I begin modeling with the client’s concept art, focusing on silhouette, depth, and proportion to draft a model that establishes accurate structure. For rigging, I adapt my approach to the project’s style—drawing from VTuber and anime references for expressive rigs, studying anatomy for realistic models, or designing mechanical rigs like Gundam that balance humanoid motion with robotic function. Building on the rig, I animate with attention to weight, balance, and timing to deliver smooth, expressive motion suited for both interactive and cinematic use.",
+      "renders": [
+        {
+          "[Dwei-bar] Cybear": [
+            {
+              "Cybear - Front": "./asset/content/char-mod/dwei-bar/Cyrbear/0001.webp",
+              "Cybear - Left": "./asset/content/char-mod/dwei-bar/Cyrbear/0002.webp",
+              "Cybear - Right": "./asset/content/char-mod/dwei-bar/Cyrbear/0003.webp",
+              "Cybear - Back": "./asset/content/char-mod/dwei-bar/Cyrbear/0004.webp",
+              "Cybear - Wireframe": "./asset/content/char-mod/dwei-bar/Cyrbear/0005.webp"
+            }
+          ],
+           "[Dwei-bar] Meeem": [
+            {
+              "Meeem - Front": "./asset/content/char-mod/dwei-bar/Meeem/0001.webp",
+              "Meeem - Left": "./asset/content/char-mod/dwei-bar/Meeem/0002.webp",
+              "Meeem - Right": "./asset/content/char-mod/dwei-bar/Meeem/0003.webp",
+              "Meeem - Back": "./asset/content/char-mod/dwei-bar/Meeem/0004.webp",
+              "Meeem  - Wireframe": "./asset/content/char-mod/dwei-bar/Meeem/0005.webp"
+            }
+          ],
+          "[Dwei-bar] Barista": [
+            {
+              "Barista - Front": "./asset/content/char-mod/dwei-bar/Barista/0001.webp",
+              "Barista - Left": "./asset/content/char-mod/dwei-bar/Barista/0002.webp",
+              "Barista - Right": "./asset/content/char-mod/dwei-bar/Barista/0003.webp",
+              "Barista - Back": "./asset/content/char-mod/dwei-bar/Barista/0004.webp",
+              "Barista  - Wireframe": "./asset/content/char-mod/dwei-bar/Barista/0005.webp"
+            }
+          ],
+          "Ryo Yamada": [
+            {
+              "turnaround": "./asset/content/char-mod/ryo_img/Ryo_turnaround.webp",
+              "short animation": "./asset/content/char-mod/ryo_vid/Ryo7.mp4",
+              "render animation": "./asset/content/char-mod/ryo_vid/ryo3.mp4",
+              "dance animation": "./asset/content/char-mod/ryo_vid/Ryo-dance.mp4",
+              "wireframe animation": "./asset/content/char-mod/ryo_vid/Ryo-dance_wireframe.mp4"
+            }
+          ],
+          "Chibi VTube-VRM": [
+            {
+              "turnaround": "./asset/content/char-mod/chibi_img/chibi-turnaround.webp",
+              "reference": "./asset/content/char-mod/chibi_img/0xmons.png",
+              "animation": "./asset/content/char-mod/chibi_vid/Vtuber1.mp4",
+              "animation1": "./asset/content/char-mod/chibi_vid/Vtuber.mp4"
+            }
+          ],
+          "Ikemen VRM": [
+            {
+              "turnaround": "./asset/content/char-mod/ikemen_img/turnaround.webp",
+              "animation": "./asset/content/char-mod/ikemen_vid/ikemen.mp4",
+              "animation1": "./asset/content/char-mod/ikemen_vid/ikemenkun.mp4"
+            }
+          ],
+          "Wobee 3D Printed": [
+            {
+              "front": "./asset/content/char-mod/wobee_img/wb1.jpg",
+              "back": "./asset/content/char-mod/wobee_img/wb2.jpg",
+              "drone": "./asset/content/char-mod/wobee_img/wb3.jpg",
+              "final product": "./asset/content/char-mod/wobee_img/wb_finalprod.jpg",
+              "turnaround": "./asset/content/char-mod/wobee_img/turnaround.jpg"
+            }
+          ]
+        }
+      ],
+      "thumbnail": "././asset/content/prod-vis/thumbnails/bottle_thumbnail.png"
+    },
+    {
+      "title": "Hard Surface",
+      "summary": "I specialize in hard surface modeling with a focus on creating detailed and optimized assets for both realistic and stylized projects.",
+      "description": "For fabric-based models such as furniture with cushions or elements that require natural folds, I use Marvelous Designer to simulate realistic cloth behavior before refining and adjusting the meshes in Blender. For non-organic and mechanical objects, I rely on box modeling techniques in Blender, which allow me to achieve clean, precise surfaces while maintaining efficiency for rendering or real-time use. This workflow ensures both accuracy in design and flexibility in style, whether for realistic interiors or mechanical hard surface assets.",
+      "workflow": "My workflow begins with identifying the product and adjusting textures and rigging to suit its specific needs. For these projects, I often rely on shapekeys, as they provide a non-destructive and efficient way to make adjustments. Final renders are created based on client specifications, typically delivered in 4K PNG format for both images and animations.",
+      "renders": [
+        {
+          "Sofa": [
+            {
+              "front": "./asset/content/prod-vis/furniture_img/sofa-front.webp",
+              "back": "./asset/content/prod-vis/furniture_img/sofa-back.webp",
+              "side left": "./asset/content/prod-vis/furniture_img/sofa-left.webp",
+              "side right": "./asset/content/prod-vis/furniture_img/sofa-right.webp",
+              "angle": "./asset/content/prod-vis/furniture_img/sofa-angle.webp"
+            }
+          ],
+          "Bicycle": [
+            {
+              "viewport": "./asset/content/char-mod/bicycle_img/paulus-torres-bmx4.jpg",
+              "wireframe": "./asset/content/char-mod/bicycle_img/paulus-torres-bmx5.jpg",
+              "stylized shader - side": "./asset/content/char-mod/bicycle_img/paulus-torres-bmx3.jpg",
+              "stylized shader - front": "./asset/content/char-mod/bicycle_img/paulus-torres-bmx2.jpg",
+              "pbr shader - side": "./asset/content/char-mod/bicycle_img/paulus-torres-bmx1.jpg",
+              "pbr shader - front": "./asset/content/char-mod/bicycle_img/paulus-torres-bmx.jpg",
+              "animation1": "./asset/content/char-mod/bicycle_vid/bike-video.mp4"
+            }
+          ],
+          "leopard case": [
+            {
+              "front": "./asset/content/prod-vis/iphonecase_img/metallicbronzeleopard_front.webp",
+              "back": "./asset/content/prod-vis/iphonecase_img/metallicbronzeleopard_back.webp",
+              "side": "./asset/content/prod-vis/iphonecase_img/metallicbronzeleopard_side.webp"
+            }
+          ],
+          "penguin case": [
+            {
+              "front": "./asset/content/prod-vis/iphonecase_img/pudgypenguin_front.webp",
+              "back": "./asset/content/prod-vis/iphonecase_img/pudgypenguin_back.webp",
+              "side": "./asset/content/prod-vis/iphonecase_img/pudgypenguin_side.webp"
+            }
+          ],
+          "bottle": [
+            {
+              "front": "./asset/content/prod-vis/bottle_img/bottle_1.webp",
+              "back": "./asset/content/prod-vis/bottle_img/bottle_4.webp",
+              "side left": "./asset/content/prod-vis/bottle_img/bottle_0.webp",
+              "side right": "./asset/content/prod-vis/bottle_img/bottle_2.webp"
+            }
+          ]
+        }
+      ],
+      "thumbnail": "./asset/content/prod-vis/thumbnails/bottle_thumbnail.webp"
+    },
+    {
+      "title": "VFX/CGI",
+      "summary": "I have experience in VFX and CGI, applying these skills to both client examinations and personal projects.",
+      "description": "While not my primary focus, I am capable of producing VFX and CGI assets when projects call for them. My work includes a professional exam project for Luxury Malls (a subsidiary of Megaworld Corp), where I applied visual effects to support high-end commercial concepts. Alongside this, I have created personal CGI projects that explore experimental visuals and design-driven effects. These experiences have given me practical exposure to integrating CGI into larger creative workflows, ensuring my skill set remains versatile and adaptable.",
+      "workflow": "CGI",
+      "renders": [
+        {
+          "Eastwood Mall": [
+            {
+              "VFX/CGI": "./asset/content/vfx/eastwood_vfx.mp4",
+              "Viewport": "./asset/content/vfx/eastwood_wireframe.mp4"
+            }
+          ],
+          "Forbes Town": [
+            {
+              "VFX/CGI": "./asset/content/vfx/forbestown_vfx.mp4",
+              "Viewport": "./asset/content/vfx/forbestown_wireframe.mp4"
+            }
+          ],"Uptown Mall": [
+            {
+              "VFX/CGI": "./asset/content/vfx/uptownmall_vfx.mp4",
+              "Viewport": "./asset/content/vfx/uptownmall_wireframe.mp4"
+            }
+          ],"IPhone": [
+            {
+              "VFX/CGI": "./asset/content/vfx/iphone-combined.mp4"
+            }
+          ]
+        }
+      ],
+      "thumbnail": "./asset/content/prod-vis/thumbnails/bottle_thumbnail.png"
+    },
+    {
+      "title": "Game Assets",
+      "summary": "Specialized in creating optimized 3D game assets with a focus on performance and efficiency.",
+      "description": "I develop game-ready models by achieving the lowest possible polycount without compromising visual fidelity. My workflow includes careful retopology and baking high-quality textures from detailed models, ensuring assets are both lightweight and visually striking. This balance of optimization and aesthetics makes the assets ideal for real-time engines, VR/AR, and large-scale environments.",
+      "workflow": "My workflow begins with gathering model specifics from clients or supervisors. I determine the project’s theme, source references, or use Meta AI to generate concept images. From there, I proceed with modeling, typically using 2K textures for showcasing, and I’m well-versed in creating LODs for performance optimization if required.",
+      "renders": [
+        {
+          "Stylized": [
+            {
+              "Anime JK Uniform": "./asset/content/gr-assets/stylized/test.jpg",
+              "Anime Shoes": "./asset/content/gr-assets/stylized/turnaround.png",
+              "Anime Shoes 2": "./asset/content/gr-assets/stylized/footw-turnaround.png"
+            }
+          ],
+          "Realistic": [
+            {
+              "Converse Shoes": "./asset/content/gr-assets/realistic/paulus-torres-converseshoes.jpg",
+              "Jacket": "./asset/content/gr-assets/realistic/test1.jpg",
+              "Leather Shoes": "./asset/content/gr-assets/realistic/leathershoes.png",
+              "Fantasy Leather Magicia Shoes": "./asset/content/gr-assets/realistic/shoes-magi.png"
+            }
+          ]
+        }
+      ],
+      "thumbnail": "./asset/content/prod-vis/thumbnails/bottle_thumbnail.png"
+    },
+    {
+      "title": "Logo Animation",
+      "summary": "Focused on side projects that bring logos to life through dynamic 3D animation.",
+      "description": "I create logo animations using Blender to maximize 3D depth and visual impact. These animations highlight branding through fluid motion, realistic lighting, and engaging transitions, making them well-suited for intros, presentations, or digital showcases.",
+      "workflow": "My process begins with gathering detailed information from the client, such as the nature of the product and the desired vibe of the animation. I coordinate closely with clients to ensure I capture their vision accurately. For the animation, I rely on Blender's Geometry Nodes for their speed, flexibility, and versatility, making them ideal for this type of project.",
+      "renders": [
+        {
+          "Dweibar": [
+            {
+              "reference": "./asset/content/logo-anim/dweibar/dweibar.webp",
+              "preview": "./asset/content/logo-anim/dweibar/dweibar-logo.mp4"
+            }
+          ],
+          "Composal": [
+            {
+              "reference": "./asset/content/logo-anim/cmp/reference/final-logo-9.png",
+              "preview": "./asset/content/logo-anim/cmp/video/composal-logo.mp4"
+            }
+          ],
+          "Green Digital Prints": [
+            {
+              "reference": "./asset/content/logo-anim/Gdp/reference/pau-torres-gdp-logo.jpg",
+              "preview": "./asset/content/logo-anim/Gdp/video/gdp-logo.mp4"
+            }
+          ]
+        }
+      ],
+      "thumbnail": "./asset/content/prod-vis/thumbnails/bottle_thumbnail.png"
+    },
+    {
+      "title": "Illustrations",
+      "summary": "Exploring creativity through digital illustrations and animated artworks.",
+      "description": "I work with Clip Studio Paint and Photoshop to produce both detailed illustrations and animated GIFs. These side projects allow me to experiment with different styles, from character-driven art to conceptual pieces, while adding motion for extra expression and storytelling.",
+      "workflow": "For original character commissions, I begin by gathering the client’s vision with questions about the character’s attitude, gender, clothing, and any preferred details. I create a sketch for client approval before moving on to coloring. This process ensures the final artwork meets their expectations while allowing for adjustments along the way.",
+      "renders": [
+        {
+          "Midori - Original Character(commissioned)": [
+            {
+              "Submitted Art": "./asset/content/illustrations/paulus-torres-midi-commish-fin-revised1.jpg",
+              "Final": "./asset/content/illustrations/paulus-torres-midi-commish-fin.jpg",
+              "Line Art": "./asset/content/illustrations/paulus-torres-midi-commish-lineart.jpg"
+            }
+          ],
+          "Clarice Fia Atlee - Fan Art and Speedpaint": [
+            {
+              "speedpaint animation": "./asset/content/illustrations/Clarice Fia Atlee [SpeedPaint].mp4",
+              "Final": "./asset/content/illustrations/pau-torres-clarice-2-2023.jpg"
+            }
+          ],
+          "Spy x Family (commissioned)": [
+            {
+              "for Shirt": "./asset/content/illustrations/pau-torres-draw-1.jpg"
+            }
+          ],
+          "Black Rock Shooter Fan Art": [
+            {
+              "Illustration": "./asset/content/illustrations/pau-torres-illustration-brs-2023.jpg"
+            }
+          ],
+          "Shenhe Fan Art": [
+            {
+              "Illustration": "./asset/content/illustrations/pau-torres-shenhe-recolor.jpg"
+            }
+          ]
+        }
+      ],
+      "thumbnail": "./asset/content/prod-vis/thumbnails/bottle_thumbnail.png"
+    },
+    {
+      "title": "3D Environment",
+      "summary": "Creating 3D environments in Blender tailored for animation — focusing on believable spaces, efficient topology, and mood-driven composition. Every scene is built with both artistic direction and technical precision in mind, ensuring optimized geometry, clean lighting setups, and camera-ready renders that support storytelling.",
+      "description": "I design and build fully realized 3D environments in Blender, intended primarily for animated sequences. My workflow balances visual appeal and performance, from layout and modeling to material setup and lighting. Each environment is crafted to enhance narrative depth, whether through atmosphere, scale, or subtle environmental storytelling — ready for animation and post-production integration.",
+      "workflow": "For original character commissions, I begin by gathering the client’s vision with questions about the character’s attitude, gender, clothing, and any preferred details. I create a sketch for client approval before moving on to coloring. This process ensures the final artwork meets their expectations while allowing for adjustments along the way.",
+      "renders": [
+        {
+          "Bocchi The Rock! Starry": [
+            {
+              "preview": "./asset/content/env/YT_studioREEL.mp4"
+            }
+          ],
+          "Joe's Laundromat": [
+            {
+              "preview": "./asset/content/env/joe's_laundromat.mp4"
+            }
+          ]
+        }
+      ],
+      "thumbnail": "./asset/content/prod-vis/thumbnails/bottle_thumbnail.png"
+    },
+    {
+      "title": "Video Editing",
+      "summary": "I produce and edit videos using a hybrid workflow combining DaVinci Resolve for grading and compositing, After Effects for motion graphics, Blender for 3D elements, Clipchamp for TTS integration, and Premiere Pro when project-specific needs arise. My goal is to create polished, narrative-driven edits that feel cinematic, purposeful, and visually consistent — whether for animation, promotional media, or storytelling content.",
+      "description": "Editing videos across multiple platforms including DaVinci Resolve, After Effects, Blender, Clipchamp, and occasionally Premiere Pro. My workflow blends precision editing, motion design, and storytelling to deliver cohesive visuals that maintain rhythm, tone, and emotional impact. Each project is handled end-to-end — from raw footage organization to visual effects, color grading, and audio refinement.",
+      "workflow": "For original character commissions, I begin by gathering the client’s vision with questions about the character’s attitude, gender, clothing, and any preferred details. I create a sketch for client approval before moving on to coloring. This process ensures the final artwork meets their expectations while allowing for adjustments along the way.",
+      "renders": [
+        {
+          "Lift Warehouse": [
+            {
+              "preview": "./asset/content/vid-ed/Lift Warehouse.mp4"
+            }
+          ],
+          "Park Series": [
+            {
+              "preview": "./asset/content/vid-ed/ParkSeries.mp4"
+            }
+          ],
+          "2D Motion Bocchi the Rock!": [
+            {
+              "preview": "./asset/content/vid-ed/Bocchi.mp4"
+            }
+          ]
+        }
+      ],
+      "thumbnail": "./asset/content/prod-vis/thumbnails/bottle_thumbnail.png"
+    }
+  ]
+}
