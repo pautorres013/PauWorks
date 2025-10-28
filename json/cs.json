@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Case Study: Making of My Portfolio Website",
+    "sections": {
+      "Background / Problem": "The goal of this website was to showcase both creative and technical skills in a single platform. With the rapid evolution of technology, particularly AI, it became important to create a medium that highlighted design capability while also demonstrating web development expertise. The site serves as an evolving project that balances creativity and technical depth, with future iterations aiming for greater automation and advanced features.",
+      "Methodology / Approach": "The initial design began with a simple structure, prioritizing layout over aesthetics. As development progressed, the site evolved toward a more dynamic and engaging user interface. Iterations focused on refining typography, responsiveness, and interactivity. CSS Grid and Flexbox were introduced to improve content organization, while animations shifted from being prominent to subtle, supporting a professional and clean look. The project also emphasized long-term scalability. Planned features include AI-driven interactivity and improved theme toggling, ensuring the portfolio grows alongside advancing technologies.",
+      "Results / Outcome": "The website now functions as a professional, responsive, and lightweight platform to present work and skills. Its structure consolidates sections like the introduction and 'About Me' for clarity, while the portfolio page adopts a magazine-like layout that balances structure with fluidity. Tailwind CSS has been implemented for efficient styling, and Firebase has been selected as the deployment platform to enable dynamic features beyond what static hosting provides.",
+      "Challenges & Solutions": "Balancing creativity with clarity: Early designs were visually engaging but lacked usability → solved by simplifying layouts and toning down animations.\n\nResponsiveness across devices: Achieved through iterative testing and refining layouts with CSS Grid and Flexbox.\n\nScalability for future features: Addressed by planning the architecture to accommodate AI integration and advanced theme toggling.",
+      "Insights / Applications": "This project demonstrated how a portfolio can serve as both a personal showcase and a testing ground for new technologies. By combining thoughtful design with technical adaptability, the site evolves continuously, reflecting both current skill sets and future directions."
+    }
+  },
+  {
+    "title": "Case Study: Optimizing Blender Animation Export for OWNverse (VRM Viewer)",
+    "sections": {
+      "Background / Problem": "OWNverse, a browser-based VRM viewer built with Three.js, Ammo.js, and TypeScript, required a customized Blender export workflow due to incompatibilities with standard Unity + UniVRM pipelines. A reliable method was needed to ensure animations played correctly in-browser while maintaining optimization.",
+      "Methodology / Approach": "The export process focused on baking animations to preserve constraints, removing IK and pole bones, and renaming the rig to match Mixamo’s convention. Animations were organized in Blender’s NLA editor, with a base pose included, and exported as FBX with only deform bones retained. This approach not only ensured compatibility with OWNverse but also reduced unnecessary constraints, resulting in cleaner, optimized animation files.",
+      "Results / Outcome": "Animations were successfully exported and validated in OWNverse. The workflow proved effective for both Mixamo and custom rigs, streamlining the export process and enabling efficient reuse across projects.",
+      "Challenges & Solutions": "Bone issues (T-pose / A-pose): Caused by missing base poses or incorrect naming → resolved by enforcing proper NLA usage and Mixamo naming.\n\nMultiple strips unsupported: OWNverse does not recognize multiple animations per file → each animation exported separately.\n\nModel drift: Resulting from center bone keyframes or scaling issues → corrected by locking the center bone and adjusting scale.",
+      "Insights / Applications": "Adapting Blender workflows for non-Unity pipelines is essential for browser-based VRM platforms. By following best practices in naming, baking, and export separation, creators can achieve reliable playback in OWNverse. While current limitations exist, this method provides a stable, optimized foundation for VRM animation on the web."
+    }
+  }
+]
