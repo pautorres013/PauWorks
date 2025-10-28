@@ -379,9 +379,6 @@
   .mr-10 {
     margin-right: calc(var(--spacing) * 10);
   }
-  .mr-15 {
-    margin-right: calc(var(--spacing) * 15);
-  }
   .mb-4 {
     margin-bottom: calc(var(--spacing) * 4);
   }
@@ -405,9 +402,6 @@
   }
   .ml-12 {
     margin-left: calc(var(--spacing) * 12);
-  }
-  .ml-15 {
-    margin-left: calc(var(--spacing) * 15);
   }
   .block {
     display: block;
@@ -854,26 +848,17 @@
   .pt-32 {
     padding-top: calc(var(--spacing) * 32);
   }
-  .pt-50 {
-    padding-top: calc(var(--spacing) * 50);
-  }
   .pr-7 {
     padding-right: calc(var(--spacing) * 7);
   }
   .pr-8 {
     padding-right: calc(var(--spacing) * 8);
   }
-  .pr-15 {
-    padding-right: calc(var(--spacing) * 15);
-  }
   .pb-50 {
     padding-bottom: calc(var(--spacing) * 50);
   }
   .pl-12 {
     padding-left: calc(var(--spacing) * 12);
-  }
-  .pl-15 {
-    padding-left: calc(var(--spacing) * 15);
   }
   .text-center {
     text-align: center;
@@ -1360,6 +1345,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: calc(var(--spacing) * 4);
     text-align: center;
   }
   section {
@@ -1422,20 +1408,35 @@
     grid-auto-flow: row;
     grid-template-columns: repeat(1, minmax(0, 1fr));
     gap: calc(var(--spacing) * 6);
+    padding-inline: calc(var(--spacing) * 10);
     padding-top: calc(var(--spacing) * 36);
     padding-left: calc(var(--spacing) * 10);
-    @media (width >= 48rem) {
-      padding-top: calc(var(--spacing) * 52);
-    }
   }
-  #case-studies {
+  .case-study {
     display: grid;
     grid-auto-flow: row;
     grid-template-columns: repeat(1, minmax(0, 1fr));
     gap: calc(var(--spacing) * 6);
-    padding-left: calc(var(--spacing) * 10);
+    border-style: var(--tw-border-style);
+    border-width: 2px;
+    padding-top: calc(var(--spacing) * 24);
+    padding-right: calc(var(--spacing) * 12);
+    padding-bottom: calc(var(--spacing) * 24);
+    padding-left: calc(var(--spacing) * 15);
     text-align: justify;
-    @media (width >= 48rem) {
+  }
+  #cs-container {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--spacing) * 5);
+    padding-inline: calc(var(--spacing) * 15);
+    @media (width >= 80rem) {
+      display: grid;
+    }
+    @media (width >= 80rem) {
+      grid-auto-flow: row;
+    }
+    @media (width >= 80rem) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }

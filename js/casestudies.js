@@ -3,10 +3,10 @@ async function loadCaseStudies() {
     const response = await fetch("./json/cs.json");
     const data = await response.json();
 
-    const container = document.getElementById("case-studies");
+    const container = document.getElementById("cs-container");
 
     data.forEach((study, index) => {
-      const studyDiv = document.createElement("section");
+      const studyDiv = document.createElement("div");
       studyDiv.className = "case-study";
       studyDiv.setAttribute("data-index", index);
 
