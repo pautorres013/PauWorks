@@ -8,13 +8,13 @@ const navbarHTML = `
                   <a id = 'nav-icons' class = 'pf-page' href="./portfolio.html" >Portfolio</a>
                   <a id = 'nav-icons' class = 'cs-page' href="./casestudies.html" >Case Studies</a>
             </div>
-            <button id="menu-btn" class="pr-7 sm:hidden focus:outline-none relative cursor-pointer opacity-80 hover:opacity-100  z-100">
+            <button id="menu-btn">
                 <svg class="w-10 h-10" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
                 </svg>
             </button>
-            <div id="mobile-menu" class="absolute w-0 top-16 right-14 rounded-b-full rounded-l-full overflow-hidden bg-[var(--color-primary)] transition-all duration-300  flex flex-col items-center space-y-1 py-4">
+            <div id="mobile-menu" class="transition-all duration-300">
                     <a id = 'nav-icons' class = 'pf-page hidden' href="./portfolio.html" >Portfolio</a>
                     <a id = 'nav-icons' class = 'cs-page hidden' href="./casestudies.html" >Case Studies</a>
             </div>
@@ -89,9 +89,7 @@ function highlightCurrentPage() {
       pfPage[1].classList.remove('bg-[var(--color-bg)]');
       csPage[1].classList.add('bg-[var(--color-bg)]');
     }
-  } catch (error) {
-
-  }
+  } catch (error) { }
 }
 
 highlightCurrentPage();

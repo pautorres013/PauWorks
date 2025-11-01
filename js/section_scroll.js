@@ -10,42 +10,63 @@ function initializeScroll() {
     if (sections.length === 0 || dots.length === 0) return;
 
     // Highlight the first dot on page load
-    dots[0]?.classList.add("opacity-100");
+    dots[0].classList.add("opacity-100");
     dots.forEach((dot, index) => {
         if (index !== 0) {
             dot.classList.add("opacity-30");
         }
     });
 
-    // Handle touch gestures for mobile
-    window.addEventListener("touchstart", (e) => {
-        touchStartY = e.touches[0].clientY;
-    });
 
-    window.addEventListener("touchmove", (e) => {
-        touchEndY = e.touches[0].clientY;
-    });
+    // // Handle touch gestures for mobile
+    // window.addEventListener("touchstart", (e) => {
+    //     touchStartY = e.touches[0].clientY;
+    // });
 
-    window.addEventListener("touchend", () => {
-        if (isScrolling) return;
+    // window.addEventListener("touchmove", (e) => {
+    //     touchEndY = e.touches[0].clientY;
+    // });
 
-        let swipeDistance = touchStartY - touchEndY;
+    // window.addEventListener("touchend", () => {
+    //     if (isScrolling) return;
 
-        if (swipeDistance > 50 && currentIndex < sections.length - 1) {
-            currentIndex++; // Swipe up (scroll down)
-        } else if (swipeDistance < -50 && currentIndex > 0) {
-            currentIndex--; // Swipe down (scroll up)
-        }
+    //     let swipeDistance = touchStartY - touchEndY;
 
-        scrollToSection(currentIndex, sections, dots);
-    });
+    //     if (swipeDistance > 50 && currentIndex < sections.length - 1) {
+    //         currentIndex++; // Swipe up (scroll down)
+    //         dir = "down";
+    //     } else if (swipeDistance < -50 && currentIndex > 0) {
+    //         currentIndex--; // Swipe down (scroll up)
+    //         dir = "up";
+    //     }
+
+    //     scrollToSection(currentIndex, sections, dots, dir);
+    // });
+    /*
     // Scroll with mouse wheel
     window.addEventListener("wheel", (e) => {
         if (isScrolling) return;
 
         currentIndex += (e.deltaY > 0 && currentIndex < sections.length - 1) ? 1 : (e.deltaY < 0 && currentIndex > 0) ? -1 : 0;
-        scrollToSection(currentIndex, sections, dots);
+        scrollToSection(currentIndex, sections, dots , dir);
+    });*/
+
+   // Scroll with mouse wheel
+    window.addEventListener("wheel", (e) => {
+        if (isScrolling) return;
+
+        const direction = e.deltaY > 0 ? "down" : "up";
+
+        if (direction === "down") {
+            currentIndex = (currentIndex + 1) % sections.length; // loops forward
+        } else if (direction === "up") {
+            currentIndex = (currentIndex - 1 + sections.length) % sections.length; // loops backward
+        }
+
+        scrollToSection(currentIndex, sections, dots, direction);
     });
+
+
 
     // Handle dot navigation clicks
     sideNav.addEventListener("click", (e) => {
@@ -62,31 +83,43 @@ function initializeScroll() {
 
 // Function to scroll and highlight active dot
 function scrollToSection(index, sections, dots) {
-    let focusedIndex = index;
-
-    // Scroll to the appropriate section
-    if (focusedIndex === 0) {
-        sections[index].scrollIntoView({
-            behavior: "smooth", // Smooth scrolling
-            block: "start",    // Align the section at the start of the viewport
+    const sect = sections[index];
+    
+    if (index === 0) {
+        sect.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
         });
     } else {
-        sections[index].scrollIntoView({
-            behavior: "smooth", // Smooth scrolling
-            block: "center",    // Align the section in the center of the viewport
+        sect.scrollIntoView({
+            behavior: "smooth",
+            block: "center",
         });
-    }
+        sect.classList.remove("animate-collapseWidth");
+        sect.classList.add("animate-expandWidth");
+        // Remove animation class after animation completes
+        setTimeout(() => {
+            sect.classList.remove("animate-expandWidth");
+        }, 800);
+        sections.forEach((sections, i) => {
+            if (i !== index && i !== 0) {
+                sections.classList.add("animate-collapseWidth");
+            }  
+        });
+    }    
 
-    // Highlight the active dot
+    // 🔹 Highlight active dot
     dots.forEach((dot, i) => {
         dot.classList.toggle("opacity-100", i === index); // Active dot
         dot.classList.toggle("opacity-30", i !== index);  // Inactive dots
     });
 
+    // 🔹 Unlock scrolling after animation completes
     setTimeout(() => {
         isScrolling = false;
-    }, 600); // Matches scroll animation duration
+    }, 800); // matches animation duration
 }
+
 
 
 // Initialize scroll effect after content is loaded or dynamically updated
@@ -98,7 +131,6 @@ window.onload = function () {
 
 // Dynamically toggle dots visibility
 export function toggleDots() {
-    const sections = document.querySelectorAll("section");
     const dots = document.querySelectorAll(".dots");
 
     dots.forEach((dot, i) => {
@@ -142,4 +174,3 @@ function generateDot() {
     // Initialize the scroll effects after generating the dots
     initializeScroll();
 }
-

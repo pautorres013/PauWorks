@@ -10,13 +10,15 @@
 <body>
   <div id="navbar-container"></div>
   <main>
-    <section id="intro">
-      <span class="paragraphs">
-        Welcome to my Case Studies page! Here, I showcase a selection of projects that highlight my skills, creativity, and problem-solving abilities. Each case study provides an in-depth look at the challenges I faced, the strategies I employed, and the outcomes achieved. Feel free to explore these projects to gain insights into my approach and expertise in various domains.
-      </span>
-    </section>
-    <section id = 'cs-container'></section>
-  </main>
+    <video class="background-video" autoplay muted loop>
+      <source src="./asset/img/media.mp4" type="video/mp4">
+    </video>
+    <div id ="cs-elements-container">
+      <div id="cs-container"></div>
+      <button id="prev-btn">◀</button>
+      <button id="next-btn">▶</button>
+    </div>
+  </main> 
   <div id="themeBar"></div>
   <script src="./js/navbar.js"></script>
   <script src='./js/themeJS/themeUI.js' type='module'></script>

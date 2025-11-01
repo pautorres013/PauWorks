@@ -2,7 +2,7 @@ let isCursorPresent = false;
 export function themesButton() {
     const themeBar = document.getElementById('themeBar');
     const sidebarToggle = document.getElementById("sidebar");
-    const themeBtn = document.getElementById("theme-btn");
+    const themeBtn = document.getElementById("themebtn-container");
     const themeTxt = document.getElementById("theme-text");
 
     if (!isCursorPresent) {

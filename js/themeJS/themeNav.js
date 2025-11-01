@@ -2,21 +2,16 @@ const themeBar = document.getElementById("themeBar");
 const body = document.body;
 
 const themeNavHTML = `
-        <div id="sidebar" class="fixed left-0 top-0 rounded-r-full cursor-pointer text-[var(--color-text)] 
-                        flex items-center justify-center h-full hidden-themebar hover:opacity-80 overflow-hidden 
-                        transition-all duration-500 ease-in-out flex-col bg-[var(--color-primary)] opacity-30 z-10 space-y-5">         
-        <span class="rotate-90 whitespace-nowrap tracking-widest text-lg" id ='theme-text'>THEMES</span>
-            <div id = 'theme-btn' class = 'hidden flex-col space-y-3 '>
-                <button id="default-theme" class="bg-[var(--color-bg)]  
-                    hover:bg-[var(--color-hover-bg)] hover:text-[var(--color-tertiary)] rounded-full text-[var(--color-text)] w-16 cursor-pointer">
+        <div id='sidebar' class='transition-all duration-500 hidden-themebar'>         
+        <span id ='theme-text' class = 'rotate-90 transition-all duration-500'>THEMES</span>
+            <div id = 'themebtn-container' class = 'hidden'>
+                <button id="default-theme" class="theme-button">
                     Default
                 </button>
-                <button id="pastel-theme" class="bg-[var(--color-bg)]  
-                    hover:bg-[var(--color-hover-bg)] hover:text-[var(--color-secondary)] rounded-full text-[var(--color-text)] w-16 cursor-pointer">
+                <button id="pastel-theme" class="theme-button">
                     Pastel
                 </button>
-                <button id="retro-theme" class="bg-[var(--color-bg)]  
-                    hover:bg-[var(--color-hover-bg)] hover:text-[var(--color-primary)] rounded-full text-[var(--color-primary)] w-16 cursor-pointer">
+                <button id="retro-theme" class="theme-button">
                     Retro
                 </button>  
             </div>

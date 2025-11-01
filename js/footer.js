@@ -11,7 +11,7 @@ let footerHTML = `
                 <img src="asset/img/github.png">
             </a>
         </div>
-        <span class = 'text-sm fixed bottom-0 right-3'>Website Version 1.2</span>
+        <span class = 'text-sm fixed bottom-0 right-3'>Website Version 1.8</span>
 `;
 let isPressed = false;
 let foot;
