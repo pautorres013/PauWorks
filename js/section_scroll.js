@@ -18,38 +18,39 @@ function initializeScroll() {
     });
 
 
-    // // Handle touch gestures for mobile
-    // window.addEventListener("touchstart", (e) => {
-    //     touchStartY = e.touches[0].clientY;
-    // });
+    let touchStartY = 0;
+    let touchEndY = 0;
+    let isScrolling = false;
 
-    // window.addEventListener("touchmove", (e) => {
-    //     touchEndY = e.touches[0].clientY;
-    // });
+    window.addEventListener("touchstart", (e) => {
+        touchStartY = e.touches[0].clientY;
+        touchEndY = touchStartY;
+    });
 
-    // window.addEventListener("touchend", () => {
-    //     if (isScrolling) return;
+    window.addEventListener("touchmove", (e) => {
+        touchEndY = e.touches[0].clientY;
+    });
 
-    //     let swipeDistance = touchStartY - touchEndY;
-
-    //     if (swipeDistance > 50 && currentIndex < sections.length - 1) {
-    //         currentIndex++; // Swipe up (scroll down)
-    //         dir = "down";
-    //     } else if (swipeDistance < -50 && currentIndex > 0) {
-    //         currentIndex--; // Swipe down (scroll up)
-    //         dir = "up";
-    //     }
-
-    //     scrollToSection(currentIndex, sections, dots, dir);
-    // });
-    /*
-    // Scroll with mouse wheel
-    window.addEventListener("wheel", (e) => {
+    window.addEventListener("touchend", () => {
         if (isScrolling) return;
 
-        currentIndex += (e.deltaY > 0 && currentIndex < sections.length - 1) ? 1 : (e.deltaY < 0 && currentIndex > 0) ? -1 : 0;
-        scrollToSection(currentIndex, sections, dots , dir);
-    });*/
+        const deltaY = touchStartY - touchEndY;
+        const sections = document.querySelectorAll("section");
+        const dots = document.querySelectorAll(".dots");
+
+        if (deltaY > 30 && currentIndex < sections.length - 1) {
+            // Swipe up → scroll down
+            currentIndex++;
+            scrollToSection(currentIndex, sections, dots, "down");
+        } else if (deltaY < -30 && currentIndex > 0) {
+            // Swipe down → scroll up
+            currentIndex--;
+            scrollToSection(currentIndex, sections, dots, "up");
+        }
+    });
+
+
+    
 
    // Scroll with mouse wheel
     window.addEventListener("wheel", (e) => {

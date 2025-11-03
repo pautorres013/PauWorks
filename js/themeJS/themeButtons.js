@@ -19,18 +19,20 @@ export function themesButton() {
     });
 }
 function themeClose(sidebar, btn, text) {
-    sidebar.classList.toggle('expanded-themebar');
-    sidebar.classList.add('hidden-themebar');
     btn.classList.add('hidden');
     btn.classList.remove('flex');
-    text.classList.add('rotate-90');
+    sidebar.classList.toggle('expanded-themebar');
+    sidebar.classList.add('hidden-themebar');
+    text.classList.remove('opacity-0');
+    text.classList.add('opacity-100');
 }
 function themeExpand(sidebar, btn, text) {
     btn.classList.remove('hidden');
     btn.classList.add('flex');
-    text.classList.remove('rotate-90');
     sidebar.classList.toggle('hidden-themebar');
     sidebar.classList.add('expanded-themebar');
+    text.classList.remove('opacity-100');
+    text.classList.add('opacity-0');
 }
 function clickThemebar(sidebar, btn, text) {
     if (sidebar.classList.contains('hidden-themebar')) {
